@@ -1,0 +1,161 @@
+{
+    "female" :[
+        {
+            "id": 1,
+            "name": "Casual T-shirt",
+            "price": 199,
+            "imgName": "tshirt.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Wide Leg Jeans",
+            "price": 999,
+            "imgName": "jeans.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Kurti and Leggings",
+            "price": 1299,
+            "imgName": "kurti.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Floral Saree",
+            "price": 1499,
+            "imgName": "saree.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Ritu Lehenga",
+            "price": 2999,
+            "imgName": "lehenga.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Brown Leather Dress",
+            "price": 3599,
+            "imgName": "leather.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Shirt Dress",
+            "price": 1199,
+            "imgName": "shirt_dress.webp"
+        },
+        {
+            "id": 8,
+            "name": "Cowl Neck Top",
+            "price": 1049,
+            "imgName": "cowled_neck.webp"
+        }
+
+    ],
+    "hoodies":[
+        {
+            "id": 9,
+            "name": "Peach Hoodie",
+            "price": 1199,
+            "imgName": "h1.webp"
+        },
+        {
+            "id": 10,
+            "name": "Mustard Hoodie",
+            "price": 599,
+            "imgName": "h2.webp"
+        },
+        {
+            "id": 11,
+            "name": "Typography Hoodie",
+            "price": 699,
+            "imgName": "h3.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Brown Hoodie",
+            "price": 1049,
+            "imgName": "h4.webp"
+        },
+        {
+            "id": 13,
+            "name": "Green Hoodie",
+            "price": 649,
+            "imgName": "h5.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Yellow Sweatshirt",
+            "price": 1049,
+            "imgName": "h6.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Striped Sweatshirt",
+            "price": 1149,
+            "imgName": "h7.jfif"
+        },
+        {
+            "id": 16,
+            "name": "Woven Sweater",
+            "price": 1049,
+            "imgName": "h8.webp"
+        }
+    ],
+    "dresses":[
+        {
+            "id": 17,
+            "name": "Cocktail Dress",
+            "price": 1799,
+            "imgName": "d1.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Pink Bodycon Dress",
+            "price": 799,
+            "imgName": "d2.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Green Dress",
+            "price": 699,
+            "imgName": "d3.webp"
+        },
+        {
+            "id": 20,
+            "name": "A-line Dress",
+            "price": 499,
+            "imgName": "d4.jpg"
+        },
+        {
+            "id": 21,
+            "name": "Cocktail Dress",
+            "price": 1449,
+            "imgName": "d5.jpg"
+        },
+        {
+            "id": 22,
+            "name": "Sequined Dress",
+            "price": 999,
+            "imgName": "d6.jpg"
+        },
+        {
+            "id": 23,
+            "name": "Bodycon Maxi Dress",
+            "price": 749,
+            "imgName": "d7.webp"
+        },
+        {
+            "id": 24,
+            "name": "Party Dress",
+            "price": 1599,
+            "imgName": "d8.webp"
+        }
+    ],
+    "cart":[
+        {
+            "id": 1,
+            "name": "Casual T-shirt",
+            "price": 199,
+            "imgName": "tshirt.jpg"
+        }
+    ]
+}
