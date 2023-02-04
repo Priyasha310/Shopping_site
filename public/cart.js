@@ -101,6 +101,7 @@ function addToCartClicked(event) {
     // cartNumbers();
     updateCartTotal();
 }
+
 // use localstorage to add the item to the cart
 function addItemToCart(title, price, imageSrc, quantity = 1) {
     var alreadyInCart = false;
@@ -158,9 +159,9 @@ function addCartItemsDivs(title, price, imageSrc, quantity) {
     var cartRowContents = `
         <div class="cart-item cart-column">
             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
-            <span class="cart-item-title">"${title}"</span>
+            <span class="cart-item-title">${title}</span>
         </div>
-        <span class="cart-price cart-column">&nbsp; "${price}"</span>
+        <span class="cart-price cart-column">&nbsp; ${price}</span>
         <div class="cart-quantity cart-column">
             <input class = "cart-item-quantity"  type = "number" value = ${quantity}>
             <button class="btn-remove"  type = "button">REMOVE</button>
