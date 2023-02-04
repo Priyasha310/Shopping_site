@@ -200,3 +200,13 @@ for(var i=0; i<wishlistButtons.length; i++){
     })
 }
 
+var cartButtons= document.getElementsByClassName("btn-cart");
+
+for(var i=0; i<cartButtons.length; i++){
+    var button = cartButtons[i];
+    button.addEventListener("click", function(event){
+        var buttonClicked = event.target;
+        buttonClicked.innerText = "ADDED TO CART!";
+        buttonClicked.style.backgroundColor = "antiquewhite";
+    })
+}
