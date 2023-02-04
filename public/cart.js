@@ -191,6 +191,15 @@ function updateCartTotal() {
 
 var wishlistButtons = document.getElementsByClassName("heart");
 
+for(var i=0; i<wishlistButtons.length; i++){
+    var button = wishlistButtons[i];
+    button.addEventListener("click", function(event){
+        var buttonClicked = event.target;
+        buttonClicked.style.color = "red";
+    })
+}
+var wishlistButtons = document.getElementsByClassName("heart");
+
 for (var i = 0; i < wishlistButtons.length; i++) {
     var button = wishlistButtons[i];
 
