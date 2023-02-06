@@ -180,44 +180,58 @@ function ready(){
     
     displayCart();
 
-    var addToCartButtons = document.getElementsByClassName("shop-item-button");
-    for(var i=02; i<addToCartButtons.length; i++){
-        var button = addToCartButtons[i];
+    // document.getElementById(`btn-cart-${item.id}`).addEventListener("click", totalCost(products[i]));
+    // document.getElementById(`btn-cart-${item.id}`).addEventListener("click", cartNumbers(products[i]));
+    
+    // var addToCartButtons = document.getElementById(`product-${item.id}`);
+    // // for(var i=0; i<addToCartButtons.length; i++){
+    //     var button = addToCartButtons;
         
-        button.addEventListener("click", function(event){
-            var buttonClicked = event.target;
-            buttonClicked.innerText = "ADDED TO CART";
-            buttonClicked.style.backgroundColor = "antiquewhite";
-            totalCost(products[i]);
-            cartNumbers(products[i]);
+    //     addToCartButtons.addEventListener("click", function(event){
+    //         var buttonClicked = event.target;
+    //         buttonClicked.innerText = "ADDED TO CART";
+    //         buttonClicked.style.backgroundColor = "antiquewhite";
+    //         totalCost(products[i]);
+    //         cartNumbers(products[i]);
             
-            console.log("added");
-        })
-    }
+    //         console.log("added");
+    //     // })
+    // }
 
-    var wishlistButtons = document.getElementsByClassName("heart");
-    for(var i=0; i<wishlistButtons.length; i++){
-        var button = wishlistButtons[i];
-        button.addEventListener("click", function(event){
-            var buttonClicked = event.target;
-            buttonClicked.style.color = "red";
+    products.forEach(product => {
+        let button = document.getElementById(`btn-cart-${product.id}`);
+        button.addEventListener("click", function() {
+          let item = { ...product, [product.id] : product};
+      
+          cartNumbers(item);
+          totalCost(item);
+        });
+      });
 
-            console.log("wishlisted");
-        })
-    }
+    // var wishlistButtons = document.getElementsByClassName("heart");
+    // for(var i=0; i<wishlistButtons.length; i++){
+    //     var button = wishlistButtons[i];
+    //     button.addEventListener("click", function(event){
+    //         var buttonClicked = event.target;
+    //         buttonClicked.style.color = "red";
 
-    var removeCartItemButtons = document.getElementsByClassName("btn-remove");
-    for (var i = 0; i < removeCartItemButtons.length; i++) {
-        var button = removeCartItemButtons[i];
-        button.addEventListener("click", removeCartItem);
-    }
+    //         console.log("wishlisted");
+    //     })
+    // }
+
+    // var removeCartItemButtons = document.getElementsByClassName("btn-remove");
+    // for (var i = 0; i < removeCartItemButtons.length; i++) {
+    //     var button = removeCartItemButtons[i];
+    //     button.addEventListener("click", removeCartItem);
+    // }
 
     let updatedcartNumber = localStorage.getItem("cartNumbers");
-        if(updatedcartNumber == null){   
-            document.querySelector("#cart-count").textContent = " 0" ;
-        }
-        else
-            document.querySelector("#cart-count").textContent = " " + updatedcartNumber;
+    if(updatedcartNumber == null){   
+        document.querySelector("#cart-count").textContent = " 0" ;
+    }
+    else
+        document.querySelector("#cart-count").textContent = " " + updatedcartNumber;
+        console.log("cart count: ", updatedcartNumber);
     
     // var quantityInputs = document.getElementsByClassName("cart-item-quantity");
     // for (var i = 0; i < quantityInputs.length; i++) {
@@ -245,6 +259,7 @@ function cartNumbers(product) {
     }
 
     setItems(product);    
+    // addToCart(product);
     
     let updatedcartNumber = localStorage.getItem("totalCost");
     console.log("Total no. of cart Product: ", updatedcartNumber);
