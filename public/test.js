@@ -260,7 +260,7 @@ function cartNumbers(product) {
     setItems(product);    
     // addToCart(product);
     
-    let updatedcartNumber = localStorage.getItem("totalCost");
+    let updatedcartNumber = localStorage.getItem("cartNumbers");
     console.log("Total no. of cart Product: ", updatedcartNumber);
 }
 
